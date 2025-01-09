@@ -17,22 +17,36 @@ Hooper API is a Django-based web application that provides comprehensive informa
    cd hooper-api
    ```
 
-2. Install dependencies:
+2. Install Pyenv and Python 3.12:
+   ```sh
+   curl https://pyenv.run | bash
+   exec "$SHELL"
+   pyenv install 3.12.0
+   pyenv global 3.12.0
+   ```
+
+3. Install Poetry:
+   ```sh
+   curl -sSL https://install.python-poetry.org | python3 -
+   export PATH="$HOME/.local/bin:$PATH"
+   ```
+
+4. Install dependencies:
    ```sh
    poetry install
    ```
 
-3. Apply migrations:
+5. Enter Poetry shell:
+   ```sh
+   poetry shell
+   ```
+
+6. Apply migrations:
    ```sh
    python manage.py migrate
    ```
 
-4. Ingest team data:
-   ```sh
-   python manage.py import_teams
-   ```
-
-5. Run the development server:
+7. Run the development server:
    ```sh
    python manage.py runserver
    ```
