@@ -94,7 +94,3 @@ Hooper API is a Django-based web application that provides comprehensive informa
    git push origin feature-branch
    ```
 5. Create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
